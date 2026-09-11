@@ -1,0 +1,21 @@
+CREATE TABLE "collections" (
+	"id" text PRIMARY KEY,
+	"collector" text NOT NULL,
+	"city" text NOT NULL,
+	"item" text NOT NULL,
+	"logged_weight" double precision NOT NULL,
+	"weight_source" text DEFAULT 'manual' NOT NULL,
+	"photo_captured" boolean DEFAULT false NOT NULL,
+	"photo_hash" text,
+	"gps_lat" double precision,
+	"gps_lng" double precision,
+	"gps_mocked" boolean DEFAULT false NOT NULL,
+	"status" text DEFAULT 'logged' NOT NULL,
+	"anomaly" boolean DEFAULT false NOT NULL,
+	"anomaly_note" text DEFAULT '' NOT NULL,
+	"verified_weight" double precision,
+	"points" integer DEFAULT 0 NOT NULL,
+	"logged_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"received_at" timestamp with time zone,
+	"credited_at" timestamp with time zone
+);

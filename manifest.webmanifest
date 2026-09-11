@@ -1,0 +1,9 @@
+{
+  "name": "Belt E-Waste Ledger",
+  "short_name": "Belt",
+  "description": "Offline-ready e-waste chain-of-custody ledger",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1E2124",
+  "theme_color": "#1E2124"
+}
